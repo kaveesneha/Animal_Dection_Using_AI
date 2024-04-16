@@ -1,0 +1,28 @@
+<h2 align="center" class="style1">Training Process </h2>
+<table width="359" height="178" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr>
+    <td align="center"><span class="style2">Image: {{ imgg }}</span></td>
+  </tr>
+  <tr>
+    <td align="center"><span class="style3">{{ tit }}</span></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="../static/trained/{{fn}}" width="300" height="300"></td>
+  </tr>
+</table>
+ {% if act=="on" %}
+	  <script>
+		setTimeout(function () {
+  		 window.location.href= '/training?act=on&page={{ page }}&imgg={{ imgg }}';
+		}, 3000);
+		</script>
+	  
+	  {% else %}
+	  <h3 style="color:#0066FF">Classified File Created, Training Completed...</h3>
+	  <script>
+	  //alert("Training Process Completed..");
+	  //window.location.href="/down";
+	  </script>
+	  {% endif %}
+<p>&nbsp;</p>
+

@@ -1,0 +1,38 @@
+
+<table width="90%" height="350" border="0" align="center">
+ 
+  <tr>
+    <td height="199" align="center">
+	
+	{% if act=="1" %}
+	<img src="../static/dataset/{{fnn}}" width="200" height="200" />
+	{% endif %}
+	
+	
+		</td>
+    <td align="center">
+	
+	
+	{% if act=="1" %}
+	<img src="../static/result/{{fnn}}" width="200" height="200" />
+	<embed src="static/audio/{{aud}}" width="50" height="50"></embed>
+	{% endif %}
+	
+	
+	
+	
+	
+	</td>
+  </tr>
+  
+  <tr>
+  <td colspan="2" align="center"><h3 style="color:#FF0000">{{msg}}</h3></td>
+  </tr>
+</table>
+  <script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+  window.location.href="/anitest";
+}, 5000);
+</script>
